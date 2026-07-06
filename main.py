@@ -11,9 +11,15 @@ from config import RESULT_PATH
 
 def main():
 
-    bt = BackTester()
+	from config import STRATEGY_MODE
 
-    trade_log = bt.run()
+	print("=" * 60)
+	print(f"Strategy Mode : {STRATEGY_MODE}")
+	print("=" * 60)
+
+	bt = BackTester()
+
+	trade_log = bt.run()
 
     report = Report(RESULT_PATH)
 

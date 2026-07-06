@@ -24,6 +24,20 @@ MINI_STOCK_COST = 0.0022
 # JT比率が70%以上、かつ1329が25日移動平均から-3%以上下に乖離したら、
 # 1329:JT = 15:5（75%:25%）へ回復リバランスする。
 ENABLE_RECOVERY_REBALANCE = True
+
+# ============================================
+# Ver2.1.0 Strategy Mode
+# ============================================
+
+# A : 現行
+# B : JT比率が高い時だけ1329買付数量を増やす
+# C : 月次リバランス
+STRATEGY_MODE = "A"
+
+JT_RATIO_BOOST = 0.65
+BOOST_MULTIPLIER = 1.5
+MONTHLY_REBALANCE_RATIO = 0.70
+
 RECOVERY_JT_RATIO_THRESHOLD = 0.70
 RECOVERY_MA_WINDOW = 25
 RECOVERY_1329_DEVIATION_THRESHOLD = -0.03

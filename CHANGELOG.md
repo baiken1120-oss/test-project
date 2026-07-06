@@ -78,3 +78,19 @@ Ver1.0開始
 ## Ver2.0.2
 - Ver2.0.0/2.0.1で誤って無効化していた `ENABLE_RECOVERY_REBALANCE` を True に戻した。
 - 売買ロジック自体は添付元コードに存在していた Ver1.1 の 1329回復リバランスを復元。
+
+## Ver2.1.0
+
+### Added
+
+- Strategy Mode設定を追加
+- Ver2系アルゴ比較のための基盤を構築
+
+### Changed
+
+- config.pyにStrategy Mode関連設定を追加
+- main.pyにStrategy Mode表示を追加
+
+### Removed
+
+- なし
